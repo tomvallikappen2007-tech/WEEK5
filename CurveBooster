@@ -1,0 +1,14 @@
+import java.util.Arrays;
+public class CurveBooster {
+    public static int[] curveScores(int scores[],int num){
+        for(int i=0;i<scores.length;i++){
+            scores[i]=scores[i]+num;
+        }
+        return scores;
+    }
+    public static void main(String[] arg) {
+        int[] scores={70,85,60};
+        curveScores(scores,num:10);
+        System.out.println(Arrays.toString(scores));
+    }
+}
